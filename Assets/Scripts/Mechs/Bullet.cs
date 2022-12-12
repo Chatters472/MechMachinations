@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LowerHold : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
+    [SerializeField] int damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +16,10 @@ public class LowerHold : MonoBehaviour
     {
         
     }
+
+    public int getBullet()
+    {
+        return damage;
+    }
+
 }

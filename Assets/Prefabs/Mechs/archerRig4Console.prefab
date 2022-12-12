@@ -143,7 +143,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3067203039601235654}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &558321652268125076
 GameObject:
@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f35d8beb0c1d943b959c18b8fa32c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
 --- !u!1 &616206021781630201
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,6 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f35d8beb0c1d943b959c18b8fa32c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
 --- !u!1 &1847342790418136509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1181,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3067203039601235654}
+  - component: {fileID: 8288439487602853496}
+  - component: {fileID: 7081090278217160048}
   m_Layer: 0
   m_Name: archerRig4Console
   m_TagString: Untagged
@@ -1230,11 +1234,51 @@ Transform:
   - {fileID: 3534765321143335603}
   - {fileID: 8469005227183894350}
   - {fileID: 2679701786582376376}
-  - {fileID: 9002935489607844809}
   - {fileID: 2114761491158895282}
+  - {fileID: 9002935489607844809}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8288439487602853496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439601096119700604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be181fcf43052f54fa53cd1fd9b803dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerRotation: {fileID: 2114761491158895282}
+  upperRotation: {fileID: 9002935489607844809}
+  lowerSpine: {fileID: 3206684898995463382}
+  upperSpine: {fileID: 9072746764018668995}
+  torsoSpeed: 10
+  legSpeed: 10
+  head: {fileID: 6865112951733374255}
+  torso: {fileID: 756984091453053643}
+  leftArm: {fileID: 8065268129136872205}
+  rightArm: {fileID: 6360289706549989067}
+  leftLeg: {fileID: 543229030705491378}
+  rightLeg: {fileID: 1203288373425748187}
+--- !u!114 &7081090278217160048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439601096119700604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e13328bb8a76c4fbc9e0f22347e612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowerSpine: {fileID: 3206684898995463382}
+  upperSpine: {fileID: 9072746764018668995}
+  lowerRotation: {fileID: 2114761491158895282}
+  upperRotation: {fileID: 9002935489607844809}
 --- !u!1 &2500724265421588346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,6 +1337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f35d8beb0c1d943b959c18b8fa32c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
 --- !u!1 &2514434349282075906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f35d8beb0c1d943b959c18b8fa32c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
 --- !u!1 &2777140762697782663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,6 +2061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f35d8beb0c1d943b959c18b8fa32c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
 --- !u!1 &3046218048672778416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,7 +2872,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3067203039601235654}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5305985869446492784
 GameObject:
@@ -3293,6 +3340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f35d8beb0c1d943b959c18b8fa32c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
 --- !u!1 &5657132962313658619
 GameObject:
   m_ObjectHideFlags: 0
