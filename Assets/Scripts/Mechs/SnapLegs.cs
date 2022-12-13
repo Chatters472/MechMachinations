@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SnapLegs : MonoBehaviour
 {
+    [SerializeField] Transform lowerRotation;
+    [SerializeField] Transform upperRotation;
+    [SerializeField] float speed;
+    private bool speedReduced;
     // Start is called before the first frame update
     void Start()
     {

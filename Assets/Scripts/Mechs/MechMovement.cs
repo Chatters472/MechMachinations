@@ -17,6 +17,8 @@ public class MechMovement : MonoBehaviour
     //Check if speed has already been reduced
     private bool torsoSpeedReduced;
     private bool legSpeedReduced;
+    //Check to see if player is in the mech
+    private bool inMech;
     //Body part health
     [SerializeField] BodyPart head;
     [SerializeField] BodyPart torso;
@@ -30,23 +32,32 @@ public class MechMovement : MonoBehaviour
         //Setting initial value
         torsoSpeedReduced = false;
         legSpeedReduced = false;
+        inMech = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         //Reduces torso speed if an arm has been destroyed
-        if ((leftArm.getDestroyed() || rightArm.getDestroyed()) || !torsoSpeedReduced)
+        if ((leftArm.getDestroyed() || rightArm.getDestroyed()) && !torsoSpeedReduced)
         {
             torsoSpeed *= 0.5f;
             torsoSpeedReduced = true; //will no longer loop through and keep reducing torso speed
         }
 
         //Reduces torso speed if an arm has been destroyed
-        if ((leftLeg.getDestroyed() || rightLeg.getDestroyed()) || !legSpeedReduced)
+        if ((leftLeg.getDestroyed() || rightLeg.getDestroyed()) && !legSpeedReduced)
         {
             legSpeed *= 0.5f;
             legSpeedReduced = true; //will no longer loop through and keep reducing leg speed
         }
     }
+
+
+
+
+
+
+
+
 }
